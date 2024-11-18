@@ -6,6 +6,8 @@ app.get('/', (req, res) => {
   res.send(`Hello ${name}!`);
 });
 
+console.log("oi");
+
 const port = parseInt(process.env.PORT) || 8081;
 app.listen(port, () => {
   console.log(`helloworld: listening on port ${port}`);
